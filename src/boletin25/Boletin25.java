@@ -31,6 +31,8 @@ public class Boletin25 {
         
         Circulos ej4b = new Circulos();
         ej4b.mostrar();
+        
+        
     }
     
 }
