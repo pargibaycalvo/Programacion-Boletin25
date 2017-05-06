@@ -34,16 +34,18 @@ public class Circulos {
         panel.setLayout(new BoxLayout(panel,BoxLayout.Y_AXIS));
         panel.add(dbj);
         panel.add(lmp);
-        texto.setBounds(new Rectangle(25, 15, 250, 21));
-        panel.add(texto);
+        texto.setBounds(new Rectangle(100, 15, 250, 21));
+        marco.add(texto);
         marco.add(panel);
         marco.setSize(500,500);
         marco.setVisible(true);
         marco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        dbj.addActionListener(new accionBotones());
+        lmp.addActionListener(new accionBotones());
         
     }
     
-public abstract class accionBotones implements ActionListener{
+public class accionBotones implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
             
@@ -63,7 +65,7 @@ public abstract class accionBotones implements ActionListener{
                 for(int c=1;c<=circulos;c++){
                     int x1 = (int) (Math.random()*100)+60;
                     int y1 = (int) (Math.random()*100)+80;
-                    g.drawOval(300, 250, 50, 70);
+                    g.drawOval(x1, y1, 50, 70);
                 }
         }
             else{
