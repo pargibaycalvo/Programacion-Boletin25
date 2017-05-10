@@ -5,6 +5,10 @@
  */
 package boletin25;
 
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.event.ActionEvent;
+
 /**
  *
  * @author ped90
@@ -31,8 +35,7 @@ public class Boletin25 {
         
         Circulos ej4b = new Circulos();
         ej4b.mostrar();
-        
-        
+       
     }
-    
 }
+

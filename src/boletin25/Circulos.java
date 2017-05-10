@@ -48,13 +48,15 @@ public class Circulos {
 public class accionBotones implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
-            
             Object obx = e.getSource();
             if(obx==dbj){
-                Debuxa=true;
+                if(Debuxa=true){
+                debuxaCirculos(panel.getGraphics());}  
             }
             else if(obx==lmp){
-                Debuxa=false;
+                panel.removeAll();
+                panel.repaint();
+                }
             }                 
         }
         
@@ -69,9 +71,9 @@ public class accionBotones implements ActionListener{
                 }
         }
             else{
-                g.setColor(Color.white);
-                g.fillRect(0, 0, 200, 200);
+                System.out.println("ERROR SYSTEM");
+                }
             }
 }
-}
-}
+
+
